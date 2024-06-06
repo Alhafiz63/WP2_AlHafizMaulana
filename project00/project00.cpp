@@ -6,7 +6,13 @@ void mPertama();
 
 int main() {
     std::cout << "hello world" << std::endl;
-    dMenu(); 
+    dMenu();
+     char p1;
+    do
+{
+    dMenu();
+    p1=getch();
+} while (p1!='5'); 
     return 0;
 }
 
@@ -26,3 +32,4 @@ void mPertama(){
     std::cout<<"hallo saya menu pertama";
     getch();
 }
+
