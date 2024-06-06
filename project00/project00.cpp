@@ -1,10 +1,12 @@
 #include <iostream>
+#include <conio.h>
 
 void dMenu();
+void mPertama();
 
 int main() {
     std::cout << "hello world" << std::endl;
-    dMenu();  // Call dMenu function
+    dMenu(); 
     return 0;
 }
 
@@ -17,4 +19,10 @@ void dMenu() {
     std::cout << "4. Menu keempat" << "\n";
     std::cout << "5. Exit" << "\n";
     std::cout << "Masukkan angka :";
+}
+
+void mPertama(){
+    system("cls");
+    std::cout<<"hallo saya menu pertama";
+    getch();
 }
