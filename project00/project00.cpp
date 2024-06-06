@@ -6,14 +6,31 @@ void mPertama();
 
 int main() {
     std::cout << "hello world" << std::endl;
-    dMenu();
-     char p1;
+     char pl;
     do
 {
     dMenu();
-    p1=getch();
-} while (p1!='5'); 
-    return 0;
+    pl=getch();
+
+
+switch(pl)
+{
+    case'1':
+mPertama();
+break;
+
+    case'5':
+    break;
+
+    default:
+    system("cls");
+    std::cout<<"pilihan tidak tersedia";
+    _getch();
+    break;
+}
+ } while (pl != '5');
+ 
+ return 0;
 }
 
 void dMenu() {
@@ -30,6 +47,5 @@ void dMenu() {
 void mPertama(){
     system("cls");
     std::cout<<"hallo saya menu pertama";
-    getch();
+    _getch();
 }
-
